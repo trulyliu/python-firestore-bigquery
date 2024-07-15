@@ -75,7 +75,7 @@ jobs:
             type=semver,pattern={{major}}
             type=ref,event=branch
             type=ref,event=pr,exclude=false
-            type=sha,enable=false
+            type=sha,exclude=true
 
       # Build and push Docker image with Buildx (don't push on PR)
       # https://github.com/docker/build-push-action
